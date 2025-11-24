@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - CoolTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="nav-brand">CoolTech</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="cart.html" class="active cart-icon">
+                        Cart 🛒
+                        <span class="cart-count">0</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 style="margin-top: 40px;">Shopping Cart</h1>
+
+        <div class="cart-layout">
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items rendered via JS -->
+                <p>Loading cart...</p>
+            </div>
+
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <hr style="margin: 15px 0; border: 0; border-top: 1px solid #eee;">
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (10%)</span>
+                    <span id="tax">$0.00</span>
+                </div>
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <span id="total">$0.00</span>
+                </div>
+
+                <button class="btn btn-primary" style="width: 100%; margin-top: 20px;">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2024 CoolTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolTech - Premium Refrigeration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="nav-brand">CoolTech</a>
+                <nav class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="cart.html" class="cart-icon">
+                        Cart 🛒
+                        <span class="cart-count">0</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>The Future of Cooling.</h1>
+            <p>Precision engineering meets timeless design. Experience the next generation of smart refrigeration.</p>
+            <a href="explore.html" class="btn btn-primary">Discover Collection</a>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Smart Technology</h3>
+                    <p>AI-driven cooling that adapts to your usage patterns.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Sustainable Design</h3>
+                    <p>Eco-friendly materials and A+++ energy efficiency ratings.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Premium Warranty</h3>
+                    <p>Comprehensive 5-year protection on all components.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 100px 40px;">
+        <div class="flex justify-between items-center" style="margin-bottom: 60px;">
+            <h2>Curated Selection</h2>
+            <a href="explore.html" class="btn btn-outline">View All</a>
+        </div>
+        <div id="featured-products" class="products-grid">
+            <!-- Products rendered via JS -->
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 60px;">Client Perspectives</h2>
+            <div class="reviews-grid">
+                <div class="review-card-large">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text-large">"The attention to detail is unmatched. It's not just a fridge, it's a
+                        piece of architectural art for my kitchen."</p>
+                    <p class="review-author-large">Sarah Jenkins</p>
+                </div>
+                <div class="review-card-large">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text-large">"I took the portable cooler on a 3-day hike. Ice was still solid when I
+                        got back. Absolutely incredible performance."</p>
+                    <p class="review-author-large">Michael Ross</p>
+                </div>
+                <div class="review-card-large">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text-large">"Silent, efficient, and beautiful. The smart features actually make my
+                        life easier. Worth every penny."</p>
+                    <p class="review-author-large">Elena Rodriguez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>CoolTech</h2>
+                    <p>Pioneering the intersection of luxury design and advanced refrigeration technology.</p>
+                    <div class="social-links">
+                        <a href="#">IG</a>
+                        <a href="#">TW</a>
+                        <a href="#">LI</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Warranty Info</a></li>
+                        <li><a href="#">Product Care</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="color: var(--footer-text-light); margin-bottom: 20px; font-size: 0.9rem;">Join our list
+                        for exclusive releases.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" placeholder="Email Address" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">→</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CoolTech Inc. All rights reserved.</p>
+                <div class="flex" style="gap: 30px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

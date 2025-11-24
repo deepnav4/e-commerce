@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - CoolTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="nav-brand">CoolTech</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="explore.html" class="active">Explore</a>
+                    <a href="cart.html" class="cart-icon">
+                        Cart 🛒
+                        <span class="cart-count">0</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container explore-layout">
+        <aside class="filters">
+            <h3>Filters</h3>
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid #eee;">
+
+            <div class="filter-group">
+                <h4>Category</h4>
+                <label class="filter-option">
+                    <input type="radio" name="category" value="all" checked> All Products
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="category" value="fridge"> Refrigerators
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="category" value="cooler"> Coolers
+                </label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <label class="filter-option">
+                    <input type="radio" name="price" value="0-10000" checked> All Prices
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="price" value="0-100"> Under $100
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="price" value="100-500"> $100 - $500
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="price" value="500-10000"> $500+
+                </label>
+            </div>
+        </aside>
+
+        <main>
+            <div class="flex justify-between items-center">
+                <h2>All Products</h2>
+                <span style="color: var(--text-light);">Showing all items</span>
+            </div>
+            <div id="products-grid" class="products-grid">
+                <!-- Products rendered via JS -->
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2024 CoolTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

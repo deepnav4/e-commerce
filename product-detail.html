@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - CoolTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="nav-brand">CoolTech</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="explore.html" class="active">Explore</a>
+                    <a href="cart.html" class="cart-icon">
+                        Cart 🛒
+                        <span class="cart-count">0</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container product-detail-container">
+        <a href="explore.html" style="display: inline-block; margin-bottom: 20px; color: var(--text-light);">&larr; Back
+            to Explore</a>
+
+        <div class="product-detail-grid">
+            <div class="detail-image">
+                <img id="detail-image" src="" alt="Product Image">
+            </div>
+
+            <div class="detail-info">
+                <h1 id="detail-title">Loading...</h1>
+                <div id="detail-price" class="detail-price">$0.00</div>
+                <p id="detail-desc">Loading description...</p>
+
+                <div id="detail-specs" class="detail-specs">
+                    <!-- Specs rendered via JS -->
+                </div>
+
+                <div class="quantity-selector">
+                    <span style="font-weight: 600;">Quantity:</span>
+                    <button id="qty-minus" class="qty-btn">-</button>
+                    <span id="qty-display" class="qty-input">1</span>
+                    <button id="qty-plus" class="qty-btn">+</button>
+                </div>
+
+                <button id="add-to-cart-btn" class="btn btn-primary" style="width: 100%;">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2024 CoolTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
